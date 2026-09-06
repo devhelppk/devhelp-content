@@ -10,7 +10,7 @@ courses/<course>/course.yaml               course metadata
 courses/<course>/NN-<module>/module.yaml   module metadata
 courses/<course>/NN-<module>/NN-<lesson>.mdx   lesson body + frontmatter
 courses/<course>/quizzes/<id>.yaml         quiz questions (answers stay server-side on the platform)
-courses/<course>/exercises/<id>/           exercise.yaml, README.mdx, starter/, tests/
+courses/<course>/exercises/<id>/           exercise.yaml, README.mdx, starter/, solution/, tests/
 badges/<slug>.yaml                         badge rules
 companies/<slug>.yaml                      verified company facts only
 ```

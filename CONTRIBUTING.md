@@ -16,7 +16,7 @@ Thank you. Every lesson here is read by people trying to get their first job or 
 4. Keep paragraphs short. Use headings every few paragraphs. Code blocks get a language tag. Internal links use `/courses/<course>/<lesson>`.
 5. Videos: `type: video` with `video: { provider: youtube, id }`, unlisted on the devhelp channel.
 6. Quizzes: `type: quiz` with `quiz: <id>` pointing at `quizzes/<id>.yaml`. Every wrong option gets `feedback` that teaches something.
-7. Exercises: `type: exercise` with `exercise: <id>`; put starter files in `starter/`, tests in `tests/`, instructions in `README.mdx`.
+7. Exercises: `type: exercise` with `exercise: <id>`; put starter files in `starter/`, a working answer in `solution/` (same file names), tests in `tests/`, instructions in `README.mdx`. CI runs the tests against `solution/` and expects `starter/` to fail at least one.
 
 ## Review
 
