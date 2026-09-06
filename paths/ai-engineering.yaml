@@ -1,0 +1,11 @@
+slug: ai-engineering
+title: AI Engineering
+summary: From engineering fundamentals to shipping with agents, in the order the industry expects.
+description: |
+  A path for students and early-career engineers in Pakistan who want to be hired in 2026 and stay hired.
+  Technical courses alternate with the career skills that offshore and remote teams actually screen for.
+courses:
+  - ai-engineering-foundations
+  - communication-for-engineers
+published: true
+position: 0

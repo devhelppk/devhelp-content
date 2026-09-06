@@ -1,0 +1,8 @@
+slug: first-lesson
+name: First lesson
+description: Completed a lesson on devhelp. Everyone starts somewhere; you started.
+icon: footprints
+rule:
+  kind: lessons_in_window
+  count: 1
+  days: 3650

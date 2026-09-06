@@ -1,0 +1,21 @@
+slug: arbisoft
+name: Arbisoft
+website: https://arbisoft.com
+description: Lahore-headquartered software services company working with international clients across education, healthcare, and travel.
+industry: Software services
+size: 501-1000
+cities:
+  - Lahore
+  - Karachi
+  - Islamabad
+founded: 2007
+stack:
+  - Python
+  - Django
+  - React
+  - TypeScript
+  - AWS
+hiresJuniors: true
+careersUrl: https://arbisoft.com/careers
+sources:
+  - https://arbisoft.com/about

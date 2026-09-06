@@ -1,0 +1,15 @@
+slug: ai-engineering-foundations
+title: AI Engineering Foundations
+summary: How software engineering actually works in 2026 - coding with agents, tracing data, evals, and shipping reliably.
+description: |
+  You will use coding agents daily. This course is about staying accountable for what they produce:
+  reading code you did not write, tracing data through a system, and knowing when to trust a result.
+track: technical
+level: beginner
+estimatedHours: 12
+completionCriteria:
+  requireAllRequiredLessons: true
+published: true
+authors:
+  - github: ShahzaibJak
+    name: Shahzaib

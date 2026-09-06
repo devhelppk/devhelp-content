@@ -1,0 +1,37 @@
+name: Promote to platform
+
+# On every merge to main, open (or update) a pull request on the platform
+# that pins content.lock.json to this commit. Deploying the platform then
+# compiles the lessons and syncs the metadata.
+on:
+  push:
+    branches: [main]
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: devhelppk/devhelp-platform
+          token: ${{ secrets.PLATFORM_PR_TOKEN }}
+      - name: Bump content.lock.json
+        run: |
+          node -e '
+            const fs = require("fs");
+            const lock = JSON.parse(fs.readFileSync("content.lock.json", "utf8"));
+            lock.sha = process.env.SHA; lock.ref = "main";
+            fs.writeFileSync("content.lock.json", JSON.stringify(lock, null, 2) + "\n");
+          '
+        env:
+          SHA: ${{ github.sha }}
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.PLATFORM_PR_TOKEN }}
+          branch: content/promote
+          title: "content: promote ${{ github.sha }}"
+          commit-message: "content: pin devhelp-content to ${{ github.sha }}"
+          body: |
+            Promotes devhelppk/devhelp-content@${{ github.sha }}.
+
+            ${{ github.event.head_commit.message }}

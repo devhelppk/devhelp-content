@@ -1,0 +1,8 @@
+slug: steady-week
+name: Steady week
+description: Five lessons in seven days. Consistency is the whole trick.
+icon: calendar-check
+rule:
+  kind: lessons_in_window
+  count: 5
+  days: 7
