@@ -1,4 +1,4 @@
 id: trace-the-refund
-runner: sandpack
+runner: browser
 language: typescript
 entry: refund.ts
