@@ -27,3 +27,28 @@ questions:
         text: The CSS of the checkout button
       - id: c
         text: The company's pricing page
+  - id: q3
+    type: multi
+    prompt: Which of these belong in a debrief? Pick every one that applies.
+    options:
+      - id: a
+        text: What failed
+        correct: true
+      - id: b
+        text: The pattern behind the failure
+        correct: true
+      - id: c
+        text: How many hours it took you
+        feedback: Effort is not information the next engineer can use.
+      - id: d
+        text: The trigger that should make you look for this next time
+        correct: true
+    explanation: Failure, pattern, trade-off, trigger. Hours are not one of them.
+  - id: q4
+    type: short
+    prompt: What is the name of the habit of following one real request from the click to the database row and back?
+    answer:
+      - trace the data
+      - tracing the data
+      - trace data
+    explanation: Every module starts with it.

@@ -1,0 +1,4 @@
+id: count-words
+runner: pyodide
+language: python
+entry: words.py
