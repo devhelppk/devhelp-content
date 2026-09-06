@@ -21,3 +21,24 @@ Thank you. Every lesson here is read by people trying to get their first job or 
 ## Review
 
 A pull request needs one review from a mentor in the track and one from an editor. CI must pass. Small, single-lesson pull requests merge fastest.
+
+## Badges (`badges/*.yaml`)
+
+A badge is a slug, a name, a one-line description, a lucide icon name
+(kebab-case, from lucide.dev/icons), and a rule the platform evaluates against
+what learners actually did. `pnpm content:check` fails on an unknown icon or a
+rule pointing at a course or path that does not exist.
+
+Rule kinds:
+
+- `lessons_in_window` (`count`, `days`): finish N lessons inside a rolling window.
+- `streak_days` (`days`): N consecutive active days, counted in Pakistan time.
+- `course_completed` (`course`): finish that course.
+- `path_completed` (`path`): finish every course in that path.
+- `first_project_accepted`: a project lesson whose automated checks pass. Valid
+  to write today; project lessons arrive after the MVP, so the check warns that
+  nobody can earn it yet and the badge starts awarding the day they land.
+
+Badges award retroactively: publishing one gives it to every learner who
+already qualifies, quietly (no notification for the backfill). Write the
+description as something a person would be glad to read, not a rule restated.

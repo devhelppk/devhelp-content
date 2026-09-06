@@ -1,0 +1,7 @@
+slug: streak-seven
+name: Seven days running
+description: Showed up seven days in a row. Habits beat marathons.
+icon: flame
+rule:
+  kind: streak_days
+  days: 7
