@@ -1,0 +1,54 @@
+id: foundations-check
+passScore: 70
+questions:
+  - id: q1
+    type: single
+    prompt: What should you do before accepting code an agent wrote?
+    options:
+      - id: a
+        text: Ship it; the agent tested it
+        feedback: The agent's tests prove what the agent thought, not what you need.
+      - id: b
+        text: Read it, run it, and trace the data through it
+        correct: true
+        feedback: You own correctness.
+      - id: c
+        text: Ask another agent to review it
+        feedback: Useful, but it does not replace your own trace.
+    explanation: Industry mode means AI is allowed and you are accountable for the result.
+  - id: q2
+    type: single
+    prompt: A customer is occasionally charged twice. Which trace do you start with?
+    options:
+      - id: a
+        text: The payment request's path from click to database write
+        correct: true
+      - id: b
+        text: The CSS of the checkout button
+      - id: c
+        text: The company's pricing page
+  - id: q3
+    type: multi
+    prompt: Which of these belong in a debrief? Pick every one that applies.
+    options:
+      - id: a
+        text: What failed
+        correct: true
+      - id: b
+        text: The pattern behind the failure
+        correct: true
+      - id: c
+        text: How many hours it took you
+        feedback: Effort is not information the next engineer can use.
+      - id: d
+        text: The trigger that should make you look for this next time
+        correct: true
+    explanation: Failure, pattern, trade-off, trigger. Hours are not one of them.
+  - id: q4
+    type: short
+    prompt: What is the name of the habit of following one real request from the click to the database row and back?
+    answer:
+      - trace the data
+      - tracing the data
+      - trace data
+    explanation: Every module starts with it.

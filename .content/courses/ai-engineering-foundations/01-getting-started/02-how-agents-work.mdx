@@ -1,0 +1,21 @@
+---
+slug: how-agents-work
+type: video
+video:
+  provider: youtube
+  id: dQw4w9WgXcQ
+---
+
+A coding agent is a loop: read context, decide, call a tool, read the result, repeat. Everything that makes agents useful or dangerous comes from what goes into that context.
+
+Watch for three things in the video:
+
+- **Context acquisition.** The agent reads files, runs commands, and greps. The same "trace the data" habit you are learning is exactly what a good agent does, and exactly where a bad one cuts corners.
+- **Tool calls are actions.** A shell command that deletes a directory is not undone by the agent apologising.
+- **Tests as proof.** When the agent says "all tests pass", ask which tests, and who wrote them.
+
+## Knowledge check
+
+- What does an agent see when it starts on your task?
+- Why is "tests pass" not the same as "the change is correct"?
+- Which parts of your own workflow could an agent do faster, and which parts should stay yours?

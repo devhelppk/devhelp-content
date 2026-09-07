@@ -1,0 +1,7 @@
+slug: course-finisher
+name: Course finisher
+description: Finished AI Engineering Foundations end to end, quiz and exercise included.
+icon: award
+rule:
+  kind: course_completed
+  course: ai-engineering-foundations
